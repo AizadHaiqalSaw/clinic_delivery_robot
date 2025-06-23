@@ -18,14 +18,16 @@ cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
 ```
 Using this script, it also place the robot in the world, and launch RVis to visualize the robot's sensors.
 If the included map is unsatisfactory, use this command to map a new map:
-
+```
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
-
+```
 This script launches the map and the robot, and also teleOp to control the robot during mapping
 
-After launching the world, and robot, we can use the command in a new terminal:
 
+After launching the world, and robot, we can use the command in a new terminal:
+```
 roslaunch warehouse_robot_simulation clinic_simulation.launch
+```
 
 This command places the 'dispatch' and 'storage' that would be used in the delivery simulation
 The delivery system works using order. User can send order by sending a message to a topic.
@@ -34,20 +36,21 @@ rostopic pub /warehouse/order/add std_msgs/String "data: '<Dispatch_name> <Produ
 
 The <Product_name> and <Quantity> can be duplicated if the dispatch would request for more products.
 For example:
+```
 rostopic pub /warehouse/order/add std_msgs/String "data: 'Dispatch1 ProductR 2 ProductG 3'"
-
+```
 This command shows that the robot would get 2 ProductR and 3 ProductG, and sends them to Dispatch1.
 
 
 
 Other than that, we also added a program that allows the user to input a room's name, and the robot would move to the location
 To trigger the program, first we launch the world and robot using the same script as above:
-
+```
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
-
+```
 Then, in a new terminal, we enter command:
-
+```
 rosrun warehouse_robot_simulation clinic_send_goal.py
-
+```
 Using this command, in the same terminal, user can enter a room name that the robot would move to, if the user forgot the rooms name, user can enter 'list' which would list out all the available rooms.
 This program would keep on running until user use the button combination 'CTRL+C', then 'ENTER' to exit the program.
