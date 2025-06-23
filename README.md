@@ -11,6 +11,14 @@ For this project we change some items from the original repository. Some of the 
 3. Added more 'dispatch' models, and placed them in each room in the world
 
 
+# Installation
+Before running the simulation, we first need to install the depencies needed for the system (This process is similar to the one from the original repository)
+
+Assuming the workspace is /catkin_ws
+To clone the repository, we use the command:
+```
+cd ~/catkin_ws/src && git clone https://github.com/rodriguesrenato/warehouse_robot_simulation.git
+```
 
 To simualate the project world, we use a script, and the command to use this scripts is as below:
 ```
