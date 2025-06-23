@@ -19,6 +19,42 @@ To clone the repository, we use the command:
 ```
 cd ~/catkin_ws/src && git clone https://github.com/AizadHaiqalSaw/clinic_delivery_robot.git
 ```
+To do mapping, we also need:
+```
+git clone https://github.com/ros-perception/slam_gmapping.git
+```
+and
+```
+git clone https://github.com/ros-teleop/teleop_twist_keyboard
+```
+
+Required dependencies:
+```
+sudo apt-get install ros-noetic-amcl
+sudo apt-get install ros-noetic-move-base
+sudo apt-get install ros-noetic-dwa-local-planner
+sudo apt-get install ros-noetic-map-server
+sudo apt-get install ros-noetic-teleop-twist-keyboard 
+sudo apt-get install ros-noetic-gmapping
+sudo apt-get install ros-noetic-slam-gmapping
+```
+
+After cloning and installing evevrything, we would need to build and source it:
+```
+cd ~/catkin_ws && catkin_make
+source devel/setup.bash
+```
+This repository also relies on Xterm for the execution of the project. To install Xterm, use:
+```
+sudo apt-get install xterm
+```
+And finally we would need to make the scripts executable:
+```
+cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && chmod +x *.sh
+```
+
+
+# Simulation
 
 To simualate the project world, we use a script, and the command to use this scripts is as below:
 ```
@@ -30,6 +66,10 @@ If the included map is unsatisfactory, use this command to map a new map:
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
 ```
 This script launches the map and the robot, and also teleOp to control the robot during mapping
+After finished mapping the world, use this command to save the map:
+```
+rosrun map_server map_saver -f clinic.
+```
 
 
 After launching the world, and robot, we can use the command in a new terminal:
