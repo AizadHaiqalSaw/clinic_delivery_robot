@@ -42,7 +42,10 @@ sudo apt-get install ros-noetic-gmapping
 sudo apt-get install ros-noetic-slam-gmapping
 ```
 
-After cloning and installing evevrything, we would need to build and source it:
+*IMPORTANT*
+Before building the workspace, please move the '*warehouse_robot_simulation*' file from the GitHub cloned file '*clinic_delivery_robot*' into '*catkin_ws/src*' (or the workspace currently used)
+
+After cloning and installing everything, we would need to build and source it:
 ```
 cd ~/catkin_ws && catkin_make
 source devel/setup.bash
@@ -54,7 +57,7 @@ sudo apt-get install xterm
 ```
 And finally we would need to make the scripts executable:
 ```
-cd ~/catkin_ws/src/clinic_delivery_robot/warehouse_robot_simulation/scripts && chmod +x *.sh
+cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && chmod +x *.sh
 ```
 
 
@@ -62,12 +65,12 @@ cd ~/catkin_ws/src/clinic_delivery_robot/warehouse_robot_simulation/scripts && c
 
 To simualate the project world, we use a script, and the command to use this scripts is as below:
 ```
-cd ~/catkin_ws/src/clinic_delivery_robot/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
+cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
 ```
 Using this script, it also place the robot in the world, and launch RVis to visualize the robot's sensors.  
 If the included map is unsatisfactory, use this command to map a new map:
 ```
-cd ~/catkin_ws/src/clinic_delivery_robot/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
+cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
 ```
 This script launches the map and the robot, and also teleOp to control the robot during mapping.  
 After finished mapping the world, use this command to save the map:
