@@ -43,7 +43,7 @@ sudo apt-get install ros-noetic-slam-gmapping
 ```
 
 ***IMPORTANT***
-Before building the workspace, please move the '    warehouse_robot_simulation    ' file from the GitHub cloned file '*clinic_delivery_robot*' into '*catkin_ws/src*' (or the workspace currently used)
+Before building the workspace, please move the ```warehouse_robot_simulation``` file from the GitHub cloned file '*clinic_delivery_robot*' into '*catkin_ws/src*' (or the workspace currently used)
 
 After cloning and installing everything, we would need to build and source it:
 ```
