@@ -13,9 +13,9 @@ For this project we change some items from the original repository. Some of the 
 
 
 To simualate the project world, we use a script, and the command to use this scripts is as below:
-
+```
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
-
+```
 Using this script, it also place the robot in the world, and launch RVis to visualize the robot's sensors.
 If the included map is unsatisfactory, use this command to map a new map:
 
