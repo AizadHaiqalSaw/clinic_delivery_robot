@@ -80,8 +80,9 @@ roslaunch warehouse_robot_simulation clinic_simulation.launch
 This command places the 'dispatch' and 'storage' that would be used in the delivery simulation
 The delivery system works using order. User can send order by sending a message to a topic.
 The format for sneding the message is as below:
+```
 rostopic pub /warehouse/order/add std_msgs/String "data: '<Dispatch_name> <Product_name> <Quantity>'"
-
+```
 The <Product_name> and <Quantity> can be duplicated if the dispatch would request for more products.
 For example:
 ```
