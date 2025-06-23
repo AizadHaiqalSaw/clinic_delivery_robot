@@ -17,7 +17,7 @@ Before running the simulation, we first need to install the depencies needed for
 Assuming the workspace is /catkin_ws
 To clone the repository, we use the command:
 ```
-cd ~/catkin_ws/src && git clone https://github.com/rodriguesrenato/warehouse_robot_simulation.git
+cd ~/catkin_ws/src && git clone https://github.com/AizadHaiqalSaw/clinic_delivery_robot.git
 ```
 
 To simualate the project world, we use a script, and the command to use this scripts is as below:
