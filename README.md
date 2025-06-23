@@ -5,7 +5,7 @@ This repository was an editted repository to make it fits our needs.
 The original repository is build by rodriguesrenato, and the link is
 https://github.com/rodriguesrenato/warehouse_robot_simulation?tab=readme-ov-file
 
-For this project we change some items from the original repository. Some of the changes include:
+For this project we changed some items from the original repository. Some of the changes include:
 1. Created a new map to satisfy our environment, which is a clinic environment
 2. Changed the coordinates for the models to fit into our simulation world
 3. Added more 'dispatch' models, and placed them in each room in the world
