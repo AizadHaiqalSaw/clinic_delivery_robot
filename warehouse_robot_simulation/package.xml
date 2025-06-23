@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>warehouse_robot_simulation</name>
+  <version>1.0.0</version>
+  <description>The warehouse_robot_simulation package</description>
+  <maintainer email="renato.rodrigues.rfr@gmail.com">Renato Rodrigues</maintainer>
+  <license>MIT</license>
+  <url type="website">https://github.com/rodriguesrenato/warehouse_robot_simulation</url>
+  <author email="renato.rodrigues.rfr@gmail.com">Renato Rodrigues</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>gazebo_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>gazebo_ros</build_export_depend>
+  <build_export_depend>gazebo_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+</package>
