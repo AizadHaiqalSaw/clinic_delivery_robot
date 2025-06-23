@@ -10,11 +10,13 @@ For this project we change some items from the original repository. Some of the 
 2. Changed the coordinates for the models to fit into our simulation world
 3. Added more 'dispatch' models, and placed them in each room in the world
 
+
+
 To simualate the project world, we use a script, and the command to use this scripts is as below:
 
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
 
-Using this script, it also place the robot in the world, and launch RVis to visualize the robot's sensors
+Using this script, it also place the robot in the world, and launch RVis to visualize the robot's sensors.
 If the included map is unsatisfactory, use this command to map a new map:
 
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
@@ -35,6 +37,7 @@ For example:
 rostopic pub /warehouse/order/add std_msgs/String "data: 'Dispatch1 ProductR 2 ProductG 3'"
 
 This command shows that the robot would get 2 ProductR and 3 ProductG, and sends them to Dispatch1.
+
 
 
 Other than that, we also added a program that allows the user to input a room's name, and the robot would move to the location
