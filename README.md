@@ -69,7 +69,8 @@ To simualate the project world, we use a script, and the command to use this scr
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
 ```
 Using this script, it also place the robot in the world, and launch RVis to visualize the robot's sensors.  
-&nbsp;If the included map is unsatisfactory, close the simulation, and use this command to map a new map:
+&nbsp;If the included map is unsatisfactory, close the simulation, and use this command to map a new map:    
+| If the included map is unsatisfactory, close the simulation, and use this command to map a new map:
 ```
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
 ```
