@@ -79,7 +79,7 @@ After finished mapping the world, use this command to save the map:
 rosrun map_server map_saver -f clinic.
 ```
 <br />
-<br />
+
 After launching the world, and robot, we can use the command in a new terminal:
 ```
 roslaunch warehouse_robot_simulation clinic_simulation.launch
