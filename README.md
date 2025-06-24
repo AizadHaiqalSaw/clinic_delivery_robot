@@ -69,23 +69,23 @@ To simualate the project world, we use a script, and the command to use this scr
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_simulation.sh
 ```
 Using this script, it also place the robot in the world, and launch RVis to visualize the robot's sensors.  
-If the included map is unsatisfactory, use this command to map a new map:
-```
-cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
-```
-This script launches the map and the robot, and also teleOp to control the robot during mapping.  
-After finished mapping the world, use this command to save the map:
-```
-rosrun map_server map_saver -f clinic.
-```
-    
-
+&nbsp;If the included map is unsatisfactory, close the simulation, and use this command to map a new map:
+&nbsp;```
+&nbsp;cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && ./clinic_mapping_slam.sh
+&nbsp;```
+&nbsp;This script launches the map and the robot, and also teleOp to control the robot during mapping.  
+&nbsp;After finished mapping the world, use this command to save the map:
+&nbsp;```
+&nbsp;rosrun map_server map_saver -f clinic.
+&nbsp;```
+<br />
+<br />
 After launching the world, and robot, we can use the command in a new terminal:
 ```
 roslaunch warehouse_robot_simulation clinic_simulation.launch
 ```
-
 This command places the 'dispatch' and 'storage' that would be used in the delivery simulation.  
+<br />
 The delivery system works using order. User can send order by sending a message to a topic.  
 The format for sending the message is as below:
 ```
