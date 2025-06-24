@@ -16,7 +16,7 @@ This project was done with the respective spec:
 
 # Installation
 Before running the simulation, we first need to install the depencies needed for the system (This process is similar to the one from the original repository)
-
+    
 Assuming the workspace is /catkin_ws,  
 To clone the repository, we use the command:
 ```
@@ -30,7 +30,7 @@ and
 ```
 git clone https://github.com/ros-teleop/teleop_twist_keyboard
 ```
-
+    
 Required dependencies:
 ```
 sudo apt-get install ros-noetic-amcl
@@ -41,11 +41,11 @@ sudo apt-get install ros-noetic-teleop-twist-keyboard
 sudo apt-get install ros-noetic-gmapping
 sudo apt-get install ros-noetic-slam-gmapping
 ```
-
+    
 ***IMPORTANT***    
 Before building the workspace, please move the ```warehouse_robot_simulation``` file from the GitHub cloned file ```catkin_ws/src/clinic_delivery_robot``` into ```catkin_ws/src``` (or the workspace currently used)    
 This is because all the files in there relies on the package ```warehouse_robot_simulation```    
-
+    
 To build and source the project, use:
 ```
 cd ~/catkin_ws && catkin_make
@@ -61,7 +61,7 @@ And finally we would need to make the scripts executable:
 cd ~/catkin_ws/src/warehouse_robot_simulation/scripts && chmod +x *.sh
 ```
 
-
+    
 # Simulation
 
 To simualate the project world, we use a script, and the command to use this scripts is as below:
@@ -78,7 +78,7 @@ After finished mapping the world, use this command to save the map:
 ```
 rosrun map_server map_saver -f clinic.
 ```
-
+    
 
 After launching the world, and robot, we can use the command in a new terminal:
 ```
@@ -100,8 +100,8 @@ This command shows that the robot would get 2 ProductR and 3 ProductG, and sends
 
 For a video on the simulation, refer to this file:    
 https://drive.google.com/file/d/1NGP5Z8Vp0IzzFWrixGl7ei9sO4jgKpFX/view?usp=sharing
-
-
+    
+    
 Other than that, we also added a program that allows the user to input a room's name, and the robot would move to the location.  
 To trigger the program, first we launch the world and robot using the same script as above:
 ```
