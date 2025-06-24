@@ -98,6 +98,8 @@ rostopic pub /warehouse/order/add std_msgs/String "data: 'Dispatch1 ProductR 2 P
 ```
 This command shows that the robot would get 2 ProductR and 3 ProductG, and sends them to Dispatch1.
 
+For a video on the simulation, refer to this file:    
+https://drive.google.com/file/d/1NGP5Z8Vp0IzzFWrixGl7ei9sO4jgKpFX/view?usp=sharing
 
 
 Other than that, we also added a program that allows the user to input a room's name, and the robot would move to the location.  
@@ -111,3 +113,6 @@ rosrun warehouse_robot_simulation clinic_send_goal.py
 ```
 Using this command, in the same terminal, user can enter a room name that the robot would move to, if the user forgot the rooms name, user can enter 'list' which would list out all the available rooms.  
 This program would keep on running until user use the button combination 'CTRL+C', then 'ENTER' to exit the program.
+
+For a video on the simulation, refer to this file:    
+https://drive.google.com/file/d/1wh2ulVDcXvoUx5rkavhitKo2fHrBdQ5n/view?usp=sharing
